@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awadh - The Green Cafe | Order Online</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts for premium serif and clean body font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fcfbf7;
+      color: #1e2c22;
+    }
+    .font-serif-brand {
+      font-family: 'Cinzel', serif;
+    }
+    .font-handwritten {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+    /* Watercolor Parchment Background Effect */
+    .parchment-bg {
+      background-color: #fcfbf7;
+      background-image: radial-gradient(rgba(235, 241, 232, 0.4) 1px, transparent 0),
+                        radial-gradient(rgba(224, 233, 219, 0.5) 1px, transparent 0);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+    /* Elegant Custom Scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f4f6f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #739072;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4f6f52;
+    }
+  </style>
+</head>
+<body class="parchment-bg min-h-screen flex flex-col selection:bg-[#739072] selection:text-white">
+
+  <!-- TOP DECORATIVE BANNER -->
+  <div class="w-full bg-[#1e2c22] text-[#ecefe6] text-center py-2 px-4 text-xs tracking-widest font-semibold flex items-center justify-center gap-2 border-b border-[#3a4d39]">
+    <span class="inline-block animate-pulse w-2 h-2 rounded-full bg-emerald-400"></span>
+    100% VEGETARIAN TADKA • SERVED WITH LOVE • AWADH VIHAR YOJANA, LUCKNOW
+  </div>
+
+  <!-- MAIN HEADER / HERO SECTION -->
+  <header class="relative py-12 px-4 max-w-7xl mx-auto w-full text-center flex flex-col items-center justify-center border-b border-[#e1e8db] overflow-hidden">
+    <!-- Leaves Left Decoration -->
+    <div class="absolute left-0 top-6 w-24 h-24 opacity-20 pointer-events-none md:opacity-40 lg:w-40 lg:h-40">
+      <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-[#4f6f52]">
+        <path d="M10 80 Q 30 50 60 70 T 90 40 Q 60 30 30 50 T 10 80" />
+        <path d="M20 70 Q 40 45 70 60" stroke="#4f6f52" stroke-width="2" fill="none"/>
+        <path d="M5 95 C 15 85, 25 70, 30 50" stroke="#4f6f52" stroke-width="3" fill="none" />
+      </svg>
+    </div>
+    <!-- Leaves Right Decoration -->
+    <div class="absolute right-0 top-6 w-24 h-24 opacity-20 pointer-events-none md:opacity-40 lg:w-40 lg:h-40 transform scale-x-[-1]">
+      <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-[#4f6f52]">
+        <path d="M10 80 Q 30 50 60 70 T 90 40 Q 60 30 30 50 T 10 80" />
+        <path d="M20 70 Q 40 45 70 60" stroke="#4f6f52" stroke-width="2" fill="none"/>
+        <path d="M5 95 C 15 85, 25 70, 30 50" stroke="#4f6f52" stroke-width="3" fill="none" />
+      </svg>
+    </div>
+
+    <!-- Brand Emblem -->
+    <div class="w-24 h-24 rounded-full border-4 border-[#4f6f52] p-1 bg-white shadow-md flex items-center justify-center mb-4 transition-transform hover:scale-105 duration-300">
+      <div class="w-full h-full rounded-full border border-dashed border-[#739072] flex flex-col items-center justify-center p-2 text-center">
+        <span class="text-[9px] uppercase tracking-tighter text-[#739072] font-bold">The Green Cafe</span>
+        <span class="font-serif-brand text-lg font-bold text-[#3a4d39] -my-1">AWADH</span>
+        <span class="text-[8px] tracking-wide text-[#8f9f8f]">☕</span>
+      </div>
+    </div>
+
+    <!-- Cafe Title -->
+    <h1 class="font-serif-brand text-4xl md:text-6xl font-bold text-[#1a2d1f] tracking-widest uppercase mb-1 drop-shadow-sm">
+      AWADH
+    </h1>
+    <div class="flex items-center justify-center gap-3 mb-2">
+      <div class="w-8 h-[1px] bg-[#4f6f52]"></div>
+      <p class="text-sm md:text-base uppercase tracking-[0.25em] text-[#4f6f52] font-semibold">THE GREEN CAFE</p>
+      <div class="w-8 h-[1px] bg-[#4f6f52]"></div>
+    </div>
+    
+    <p class="font-handwritten text-lg md:text-xl text-[#739072] mb-4 flex items-center gap-1">
+      ♥ served with love ♥
+    </p>
+
+    <!-- Center Coffee Cup Illustration (Stylized SVG recreating the menu watercolor mug) -->
+    <div class="relative my-2 flex justify-center items-center w-64 h-44">
+      <div class="absolute inset-0 bg-emerald-100 rounded-full filter blur-2xl opacity-40"></div>
+      
+      <svg class="relative z-10 w-full h-full drop-shadow-lg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Floating Steam -->
+        <path d="M120,60 C125,45 115,35 125,20 C130,10 135,15 130,5" stroke="#739072" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3" opacity="0.6"/>
+        <path d="M140,55 C148,42 138,30 148,15 C153,5 158,10 153,2" stroke="#4f6f52" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+        <path d="M160,60 C163,48 155,38 165,22 C170,12 175,17 170,8" stroke="#739072" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 2" opacity="0.5"/>
+
+        <!-- Wooden Plate Coaster -->
+        <ellipse cx="150" cy="145" rx="90" ry="25" fill="#5c4033" opacity="0.85"/>
+        <ellipse cx="150" cy="142" rx="88" ry="23" fill="#8b5a2b"/>
+        <ellipse cx="150" cy="142" rx="75" ry="18" stroke="#3d2314" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <ellipse cx="155" cy="143" rx="55" ry="12" stroke="#3d2314" stroke-width="1" fill="none" opacity="0.3"/>
+
+        <!-- Green Coffee Cup Outer Handle -->
+        <path d="M210,105 C240,105 240,140 210,140" stroke="#2c4c38" stroke-width="14" stroke-linecap="round" />
+        <path d="M210,105 C240,105 240,140 210,140" stroke="#3a5f43" stroke-width="8" stroke-linecap="round" />
+
+        <!-- Green Coffee Cup Main Body -->
+        <path d="M100,100 C100,150 200,150 200,100 Z" fill="#2c4c38"/>
+        <path d="M95,95 C95,120 100,145 150,145 C200,145 205,120 205,95 Z" fill="#3a5f43"/>
+        
+        <!-- Cup Rim / Liquid surface -->
+        <ellipse cx="150" cy="95" rx="55" ry="12" fill="#2c4c38" />
+        <ellipse cx="150" cy="95" rx="51" ry="9" fill="#231709" />
+        <ellipse cx="150" cy="95" rx="46" ry="6" fill="#4a3000" />
+        <ellipse cx="145" cy="94" rx="35" ry="4" fill="#6f4e37" opacity="0.8" />
+        
+        <!-- Mini Emblem on Cup -->
+        <circle cx="150" cy="122" r="16" fill="#fcfbf7" stroke="#2c4c38" stroke-width="1.5"/>
+        <circle cx="150" cy="122" r="14" fill="none" stroke="#739072" stroke-width="0.5" stroke-dasharray="2 2"/>
+        <text x="150" y="122" font-family="'Cinzel', serif" font-weight="bold" font-size="5.5" fill="#2c4c38" text-anchor="middle">AWADH</text>
+        <path d="M142,127 C146,125 154,125 158,127" stroke="#2c4c38" stroke-width="0.7"/>
+
+        <!-- Surrounding Leaves -->
+        <path d="M60,140 C50,120 70,110 85,125 C80,135 70,145 60,140 Z" fill="#4f6f52" opacity="0.65"/>
+        <path d="M240,145 C255,130 235,115 225,130 C230,140 235,148 240,145 Z" fill="#739072" opacity="0.55"/>
+        <path d="M150,165 C135,175 125,160 140,155 C145,160 148,162 150,165 Z" fill="#4f6f52" opacity="0.75"/>
+      </svg>
+    </div>
+
+    <!-- Motto -->
+    <div class="flex flex-col items-center mt-3 text-[#3a4d39] font-bold text-xs md:text-sm tracking-[0.3em] uppercase space-y-1">
+      <span>GOOD FOOD</span>
+      <span>• GOOD MOOD •</span>
+      <span>GREAT VIBES</span>
+      <span class="text-[#739072]">♥</span>
+    </div>
+  </header>
+
+  <!-- SEARCH & NAVIGATION -->
+  <section class="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-sm border-b border-[#e1e8db] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row gap-4 items-center justify-between">
+      
+      <!-- Category Tabs -->
+      <div class="w-full md:w-auto flex items-center gap-1 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+        <button onclick="filterCategory('all')" id="tab-all" class="category-tab px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap bg-[#3a4d39] text-white transition-all">
+          All Delicacies
+        </button>
+        <button onclick="filterCategory('drinks')" id="tab-drinks" class="category-tab px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap text-[#4f6f52] hover:bg-emerald-50 transition-all">
+          Sips & Coffee
+        </button>
+        <button onclick="filterCategory('momos')" id="tab-momos" class="category-tab px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap text-[#4f6f52] hover:bg-emerald-50 transition-all">
+          Momo Magic
+        </button>
+        <button onclick="filterCategory('chinese')" id="tab-chinese" class="category-tab px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap text-[#4f6f52] hover:bg-emerald-50 transition-all">
+          Chinese Tadka
+        </button>
+        <button onclick="filterCategory('snacks')" id="tab-snacks" class="category-tab px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap text-[#4f6f52] hover:bg-emerald-50 transition-all">
+          Bites, Fries & Pastas
+        </button>
+        <button onclick="filterCategory('specials')" id="tab-specials" class="category-tab px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase whitespace-nowrap text-[#d4af37] border border-[#d4af37]/40 hover:bg-yellow-50/50 transition-all flex items-center gap-1">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Specials
+        </button>
+      </div>
+
+      <!-- Search Field & Cart Button -->
+      <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+        <div class="relative w-full md:w-64">
+          <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Search menu..." class="w-full text-sm bg-[#fcfbf7] border border-[#d2dcd0] rounded-full pl-9 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#739072] text-[#2c3e30]" />
+          <i data-lucide="search" class="w-4 h-4 text-[#739072] absolute left-3 top-1/2 -translate-y-1/2"></i>
+        </div>
+        
+        <button onclick="scrollToCart()" class="relative bg-[#4f6f52] hover:bg-[#3a4d39] text-white p-2.5 rounded-full transition-all flex items-center gap-2 shadow-md">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="cartCount" class="absolute -top-1.5 -right-1.5 bg-[#d4dfc7] text-[#1e2c22] border-2 border-[#4f6f52] text-[10px] font-extrabold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN GRID CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-1 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    
+    <!-- MENU ITEMS SECTION (Left columns) -->
+    <div class="lg:col-span-2 space-y-12">
+      
+      <!-- HOT SIPS & CAFFEINE -->
+      <section class="menu-group" data-cat="drinks">
+        <div class="flex items-center gap-2 mb-6 border-b border-[#cbd7c7] pb-2">
+          <div class="p-2 bg-emerald-50 rounded-lg text-[#3a4d39]">
+            <i data-lucide="coffee" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif-brand text-xl md:text-2xl font-bold text-[#1e2c22] tracking-wide">HOT SIPS & CAFFEINE</h2>
+            <p class="text-xs text-[#739072]">Freshly brewed warm infusions and premium beans</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="drinks-container"></div>
+      </section>
+
+      <!-- MOMO MAGIC -->
+      <section class="menu-group" data-cat="momos">
+        <div class="flex items-center gap-2 mb-6 border-b border-[#cbd7c7] pb-2">
+          <div class="p-2 bg-emerald-50 rounded-lg text-[#3a4d39]">
+            <i data-lucide="utensils" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif-brand text-xl md:text-2xl font-bold text-[#1e2c22] tracking-wide">MOMO MAGIC</h2>
+            <p class="text-xs text-[#739072]">Delectable dumplings in half and full size servings</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="momos-container"></div>
+      </section>
+
+      <!-- CHINESE TADKA -->
+      <section class="menu-group" data-cat="chinese">
+        <div class="flex items-center gap-2 mb-6 border-b border-[#cbd7c7] pb-2">
+          <div class="p-2 bg-emerald-50 rounded-lg text-[#3a4d39]">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif-brand text-xl md:text-2xl font-bold text-[#1e2c22] tracking-wide">CHINESE TADKA</h2>
+            <p class="text-xs text-[#739072]">Spicy stir fries, savory gravies, and wok noodles</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="chinese-container"></div>
+      </section>
+
+      <!-- SNACKS, FRIES & BURGERS -->
+      <section class="menu-group" data-cat="snacks">
+        <div class="flex items-center gap-2 mb-6 border-b border-[#cbd7c7] pb-2">
+          <div class="p-2 bg-emerald-50 rounded-lg text-[#3a4d39]">
+            <i data-lucide="sandwich" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif-brand text-xl md:text-2xl font-bold text-[#1e2c22] tracking-wide">SNACKS, FRIES & BURGERS</h2>
+            <p class="text-xs text-[#739072]">Comforting sides, loaded sandwiches, and grilled burgers</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="snacks-container"></div>
+      </section>
+
+      <!-- CONTINENTAL & COMFORT -->
+      <section class="menu-group" data-cat="snacks">
+        <div class="flex items-center gap-2 mb-6 border-b border-[#cbd7c7] pb-2">
+          <div class="p-2 bg-emerald-50 rounded-lg text-[#3a4d39]">
+            <i data-lucide="soup" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif-brand text-xl md:text-2xl font-bold text-[#1e2c22] tracking-wide">CONTINENTAL & COMFORT</h2>
+            <p class="text-xs text-[#739072]">Rich Pastas, Italian Style Mushrooms, and hot Maggi bowls</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="continental-container"></div>
+      </section>
+
+      <!-- GREEN CAFE SPECIALS & COMBO TREATS -->
+      <section class="menu-group" data-cat="specials">
+        <div class="flex items-center gap-2 mb-6 border-b border-amber-300 pb-2">
+          <div class="p-2 bg-amber-50 rounded-lg text-[#a07c1e]">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="font-serif-brand text-xl md:text-2xl font-bold text-[#1e2c22] tracking-wide">GREEN CAFE SPECIALS & COMBOS</h2>
+            <p class="text-xs text-amber-700">Healthy green options and complete value combination meals</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="specials-container"></div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR (Checkout Form, Cart Items, Location Details) -->
+    <div class="space-y-6">
+      
+      <!-- OUTPOST ADDRESS CARD -->
+      <div class="bg-[#1e2c22] text-[#fcfbf7] rounded-3xl p-6 shadow-xl relative overflow-hidden border border-[#304735]">
+        <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-y-6 translate-x-6">
+          <i data-lucide="leaf" class="w-48 h-48 text-[#d4af37]"></i>
+        </div>
+        <div class="flex items-center gap-2 text-[#d4af37] uppercase text-[10px] font-semibold tracking-widest mb-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#d4af37]"></span>
+          OUR OUTPOST LOCATION
+        </div>
+        <h3 class="font-serif-brand text-xl font-bold text-white mb-1">Awadh Vihar Yojana, Lucknow</h3>
+        <p class="text-xs text-gray-300 leading-relaxed">
+          Near Central Market Square. Perfect ambient dining for family & friends.
+        </p>
+        <div class="flex items-center gap-2 text-xs text-emerald-400 mt-3 font-semibold">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 74061 09038
+        </div>
+      </div>
+
+      <!-- ACTIVE CART / PLATE RECIPE LIST -->
+      <div id="cartSection" class="bg-white rounded-3xl p-6 shadow-md border border-[#e1e8db] transition-all duration-300">
+        <div class="flex items-center justify-between pb-3 border-b border-[#f0f4ee] mb-4">
+          <h3 class="font-serif-brand text-base font-bold text-[#1e2c22] flex items-center gap-2">
+            <i data-lucide="shopping-cart" class="w-4 h-4 text-[#4f6f52]"></i>
+            Your Order Plate
+          </h3>
+          <button onclick="clearCart()" class="text-xs text-red-500 hover:text-red-700 font-semibold flex items-center gap-1">
+            <i data-lucide="trash" class="w-3 h-3"></i> Clear
+          </button>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cartItems" class="space-y-3 max-h-60 overflow-y-auto pr-1">
+          <!-- Empty State -->
+          <div id="cartEmptyState" class="text-center py-8 text-gray-400">
+            <p class="text-3xl">☕</p>
+            <p class="text-xs font-semibold mt-2 text-gray-500">Your plate is currently empty.</p>
+            <p class="text-[10px] text-gray-400 mt-0.5">Click "Add" on menu delicacies to compile.</p>
+          </div>
+        </div>
+
+        <!-- Pricing Summary -->
+        <div class="border-t border-[#f0f4ee] pt-4 mt-4 space-y-2 text-xs text-gray-600">
+          <div class="flex justify-between">
+            <span>Subtotal</span>
+            <span class="font-semibold text-[#1e2c22]" id="cartSubtotal">₹0.00</span>
+          </div>
+          <div class="flex justify-between text-[11px]">
+            <span>GST & Service Charge (5%)</span>
+            <span class="font-medium text-[#1e2c22]" id="cartTax">₹0.00</span>
+          </div>
+          <div class="flex justify-between text-sm font-bold text-[#1e2c22] pt-2 border-t border-dashed border-[#f0f4ee]">
+            <span>Total Payable</span>
+            <span class="text-[#4f6f52]" id="cartTotal">₹0.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ORDER DETAILS & BOOKING FORM -->
+      <div class="bg-white rounded-3xl p-6 shadow-md border border-[#e1e8db]">
+        <h3 class="font-serif-brand text-base font-bold text-[#1e2c22] flex items-center gap-2 border-b border-[#f4f6f1] pb-3 mb-4">
+          <i data-lucide="user-check" class="w-4 h-4 text-[#4f6f52]"></i>
+          Customer Details
+        </h3>
+
+        <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4">
+          <!-- Customer Name -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 mb-1">
+              Your Name <span class="text-red-500 font-bold">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="custName" 
+              required
+              placeholder="e.g. Ramesh Kumar" 
+              class="w-full text-xs bg-[#fcfbf7] border border-[#cbd7c7] rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#739072]"
+            />
+          </div>
+
+          <!-- Contact Number -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 mb-1">
+              Contact Number <span class="text-red-500 font-bold">*</span>
+            </label>
+            <input 
+              type="tel" 
+              id="custPhone" 
+              required
+              pattern="[0-9]{10}"
+              placeholder="10-digit mobile number" 
+              class="w-full text-xs bg-[#fcfbf7] border border-[#cbd7c7] rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#739072]"
+            />
+          </div>
+
+          <!-- Dine in or Home Delivery -->
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 mb-1">
+              Dining Mode Selection <span class="text-red-500 font-bold">*</span>
+            </label>
+            <select 
+              id="diningMode" 
+              required
+              onchange="handleDiningModeChange()"
+              class="w-full text-xs bg-[#fcfbf7] border border-[#cbd7c7] rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#739072]"
+            >
+              <option value="" disabled selected>-- Select Mode --</option>
+              <option value="dinein">Dine-In at Cafe</option>
+              <option value="delivery">Home Delivery</option>
+            </select>
+          </div>
+
+          <!-- Dine-In Extra Field (Tables) -->
+          <div id="dineInFields" class="hidden animate-fadeIn">
+            <label class="block text-xs font-semibold text-[#4f6f52] mb-1">
+              Select Table <span class="text-red-500 font-bold">*</span>
+            </label>
+            <select 
+              id="tableNumber"
+              class="w-full text-xs bg-emerald-50/50 border border-[#739072]/40 rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#739072]"
+            >
+              <option value="" disabled selected>-- Select Table --</option>
+              <option value="Table 1">Table 1 (2 Seater Window Side)</option>
+              <option value="Table 2">Table 2 (2 Seater Classic)</option>
+              <option value="Table 3">Table 3 (4 Seater Garden View)</option>
+              <option value="Table 4">Table 4 (4 Seater Family)</option>
+              <option value="Table 5">Table 5 (6 Seater Royal)</option>
+              <option value="Table 6">Table 6 (2 Seater Lounge)</option>
+              <option value="Table 7">Table 7 (4 Seater Corner)</option>
+              <option value="Table 8">Table 8 (8 Seater Feast Table)</option>
+            </select>
+          </div>
+
+          <!-- Delivery Extra Field (Address) -->
+          <div id="deliveryFields" class="hidden animate-fadeIn">
+            <label class="block text-xs font-semibold text-amber-800 mb-1">
+              Delivery Address <span class="text-red-500 font-bold">*</span>
+            </label>
+            <textarea 
+              id="deliveryAddress" 
+              rows="3"
+              placeholder="Provide complete address in Awadh Vihar Yojana or nearby lucknow locations..." 
+              class="w-full text-xs bg-amber-50/30 border border-amber-300/60 rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#739072]"
+            ></textarea>
+          </div>
+
+          <!-- Send To Whatsapp Button -->
+          <button 
+            type="submit" 
+            class="w-full bg-[#1e2c22] hover:bg-[#3a4d39] text-[#fcfbf7] py-3.5 rounded-full text-xs font-bold tracking-wider uppercase shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 mt-2"
+          >
+            <svg class="w-4 h-4 text-emerald-400 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 1.989 14.062.96 11.453.96 6.01.96 1.586 5.33 1.582 10.76c-.001 1.745.487 3.4 1.41 4.835L1.932 20.67l5.225-1.37zM18.21 14.86c-.33-.164-1.951-.955-2.251-1.064-.3-.11-.518-.165-.736.164-.218.33-.845 1.064-1.036 1.282-.19.218-.381.245-.71.082-.33-.164-1.393-.51-2.653-1.631-.98-.871-1.642-1.949-1.833-2.277-.192-.328-.02-.505.144-.669.148-.148.33-.382.495-.573.164-.19.219-.328.33-.546.11-.218.055-.41-.028-.573-.082-.164-.736-1.758-1.009-2.414-.265-.636-.534-.55-.736-.56h-.627c-.218 0-.573.082-.873.41-.3.328-1.145 1.116-1.145 2.716s1.173 3.146 1.336 3.364c.164.218 2.308 3.495 5.59 4.893.78.333 1.39.532 1.864.682.785.248 1.5.213 2.064.13.63-.092 1.951-.79 2.224-1.555.273-.764.273-1.42.19-1.555-.082-.134-.3-.218-.63-.382z"/>
+            </svg>
+            Send Order to Cafe WhatsApp
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1e2c22] text-[#cbd7c7] py-12 px-4 mt-16 border-t-2 border-[#d4af37]/30">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <!-- About -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-center md:justify-start gap-2">
+          <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center p-0.5">
+            <span class="text-[8px] font-bold text-[#1e2c22]">AWADH</span>
+          </div>
+          <span class="font-serif-brand font-semibold text-[#fcfbf7] tracking-wider">AWADH CAFE</span>
+        </div>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Inspired by rich local traditions and the healing beauty of fresh, green organic foods. Crafted beautifully with classic Indian and Global Tadka flavors.
+        </p>
+      </div>
+
+      <!-- Timings / Location -->
+      <div class="space-y-2">
+        <h4 class="font-semibold text-white text-sm uppercase tracking-wider text-[#d4af37]">Our Lucknow Location</h4>
+        <p class="text-xs text-gray-400">📍 Awadh Vihar Yojana, Lucknow, Uttar Pradesh</p>
+        <p class="text-xs text-gray-400">🕒 Monday - Sunday: 11:00 AM - 10:00 PM</p>
+        <p class="text-xs text-gray-400">🍀 Pure Vegetarian Gastronomic Delights</p>
+      </div>
+
+      <!-- Quick Contact / Socials -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-white text-sm uppercase tracking-wider text-[#d4af37]">Stay Connected</h4>
+        <div class="flex justify-center md:justify-start gap-3">
+          <a href="#" class="p-2 bg-emerald-950 rounded-full hover:bg-[#4f6f52] text-emerald-400 hover:text-white transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="p-2 bg-emerald-950 rounded-full hover:bg-[#4f6f52] text-emerald-400 hover:text-white transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" class="p-2 bg-emerald-950 rounded-full hover:bg-[#4f6f52] text-emerald-400 hover:text-white transition-all"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+          <a href="#" class="p-2 bg-emerald-950 rounded-full hover:bg-[#4f6f52] text-emerald-400 hover:text-white transition-all"><i data-lucide="message-square" class="w-4 h-4"></i></a>
+        </div>
+        <p class="text-[10px] text-gray-500">© 2026 Awadh The Green Cafe. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MENU ITEMS DATA DIRECT FROM THE MENU CARDS -->
+  <script>
+    const menuData = [
+      // HOT SIPS
+      { id: 'h1', name: 'Kulhad Tea', price: 25, cat: 'drinks', subcat: 'Hot Sips', desc: 'Authentic rich tea served hot in an earthen traditional kulhad.', qtyInfo: '1 Cup' },
+      { id: 'h2', name: 'Lemon Tea', price: 25, cat: 'drinks', subcat: 'Hot Sips', desc: 'Zesty and light tea infused with freshly squeezed mountain lemon juice.', qtyInfo: '1 Cup' },
+      { id: 'h3', name: 'Black Tea', price: 20, cat: 'drinks', subcat: 'Hot Sips', desc: 'Strong, premium black leaf brew rich in antioxidants.', qtyInfo: '1 Cup' },
+
+      // CAFFEINE CORNER
+      { id: 'c1', name: 'Americano (Black Coffee)', price: 39, cat: 'drinks', subcat: 'Caffeine Corner', desc: 'Crisp shot of espresso diluted with piping hot fresh mineral water.', qtyInfo: '1 Cup' },
+      { id: 'c2', name: 'Coffee Late (Latte)', price: 50, cat: 'drinks', subcat: 'Caffeine Corner', desc: 'Mild and silky textured coffee topped with creamy frothed milk.', qtyInfo: '1 Cup' },
+      { id: 'c3', name: 'Cold Coffee', price: 70, cat: 'drinks', subcat: 'Caffeine Corner', desc: 'Classic frothy cold blended milkshake style premium coffee with vanilla essence.', qtyInfo: '1 Cup' },
+
+      // MOMO MAGIC
+      { id: 'm1_h', name: 'Veg Momos (Half)', price: 50, cat: 'momos', subcat: 'Momo Magic', desc: 'Classic steamed thin-skin momos stuffed with finely minced fresh veggies.', variant: 'Half' },
+      { id: 'm1_f', name: 'Veg Momos (Full)', price: 99, cat: 'momos', subcat: 'Momo Magic', desc: 'Classic steamed thin-skin momos stuffed with finely minced fresh veggies.', variant: 'Full' },
+      
+      { id: 'm2_h', name: 'Veg Fried Momos (Half)', price: 69, cat: 'momos', subcat: 'Momo Magic', desc: 'Crispy deep fried vegetable dumplings served with hot schezwan chutney.', variant: 'Half' },
+      { id: 'm2_f', name: 'Veg Fried Momos (Full)', price: 99, cat: 'momos', subcat: 'Momo Magic', desc: 'Crispy deep fried vegetable dumplings served with hot schezwan chutney.', variant: 'Full' },
+
+      { id: 'm3_h', name: 'Kurkure Momos (Half)', price: 69, cat: 'momos', subcat: 'Momo Magic', desc: 'Super crunchy cornflake crusted juicy fried delicious street style momos.', variant: 'Half' },
+      { id: 'm3_f', name: 'Kurkure Momos (Full)', price: 129, cat: 'momos', subcat: 'Momo Magic', desc: 'Super crunchy cornflake crusted juicy fried delicious street style momos.', variant: 'Full' },
+
+      { id: 'm4_h', name: 'Dragon Momos (Half)', price: 89, cat: 'momos', subcat: 'Momo Magic', desc: 'Sautéed in a spicy hot and tangy classic oriental dragon fire sauce.', variant: 'Half' },
+      { id: 'm4_f', name: 'Dragon Momos (Full)', price: 169, cat: 'momos', subcat: 'Momo Magic', desc: 'Sautéed in a spicy hot and tangy classic oriental dragon fire sauce.', variant: 'Full' },
+
+      { id: 'm5_h', name: 'Honey Chilli Momos (Half)', price: 99, cat: 'momos', subcat: 'Momo Magic', desc: 'Sweet, sticky and hot honey glaze topped with toasted sesame seeds.', variant: 'Half' },
+      { id: 'm5_f', name: 'Honey Chilli Momos (Full)', price: 189, cat: 'momos', subcat: 'Momo Magic', desc: 'Sweet, sticky and hot honey glaze topped with toasted sesame seeds.', variant: 'Full' },
+
+      { id: 'm6_h', name: 'Veg Gravy Momos (Half)', price: 89, cat: 'momos', subcat: 'Momo Magic', desc: 'Submerged in rich, warm and creamy signature gravy base.', variant: 'Half' },
+      { id: 'm6_f', name: 'Veg Gravy Momos (Full)', price: 179, cat: 'momos', subcat: 'Momo Magic', desc: 'Submerged in rich, warm and creamy signature gravy base.', variant: 'Full' },
+
+      { id: 'm7_h', name: 'Veg Spring Roll (Half)', price: 60, cat: 'momos', subcat: 'Momo Magic', desc: 'Golden crunchy wrapper filled with stir-fried cabbage, carrots & green onion.', variant: 'Half' },
+      { id: 'm7_f', name: 'Veg Spring Roll (Full)', price: 120, cat: 'momos', subcat: 'Momo Magic', desc: 'Golden crunchy wrapper filled with stir-fried cabbage, carrots & green onion.', variant: 'Full' },
+
+      // FRENCH FRIES & BURGERS (Snacks)
+      { id: 'ff1_h', name: 'Salted Fries (Half)', price: 40, cat: 'snacks', subcat: 'French Fries', desc: 'Classic golden salted potato fries.', variant: 'Half' },
+      { id: 'ff1_f', name: 'Salted Fries (Full)', price: 80, cat: 'snacks', subcat: 'French Fries', desc: 'Classic golden salted potato fries.', variant: 'Full' },
+      { id: 'ff2_h', name: 'Masala French Fries (Half)', price: 50, cat: 'snacks', subcat: 'French Fries', desc: 'Tossed in dry and hot zesty Indian spices.', variant: 'Half' },
+      { id: 'ff2_f', name: 'Masala French Fries (Full)', price: 99, cat: 'snacks', subcat: 'French Fries', desc: 'Tossed in dry and hot zesty Indian spices.', variant: 'Full' },
+      { id: 'ff3_h', name: 'Peri Peri Fries (Half)', price: 70, cat: 'snacks', subcat: 'French Fries', desc: 'Fiery peri-peri spice dust classic.', variant: 'Half' },
+      { id: 'ff3_f', name: 'Peri Peri Fries (Full)', price: 129, cat: 'snacks', subcat: 'French Fries', desc: 'Fiery peri-peri spice dust classic.', variant: 'Full' },
+      { id: 'ff4_h', name: 'Chilli Potato (Half)', price: 70, cat: 'snacks', subcat: 'French Fries', desc: 'Tangy wok fried potato wedges.', variant: 'Half' },
+      { id: 'ff4_f', name: 'Chilli Potato (Full)', price: 140, cat: 'snacks', subcat: 'French Fries', desc: 'Tangy wok fried potato wedges.', variant: 'Full' },
+      { id: 'ff5_h', name: 'Honey Chilli Potato (Half)', price: 89, cat: 'snacks', subcat: 'French Fries', desc: 'Sweet, spicy golden crunchy potato fingers.', variant: 'Half' },
+      { id: 'ff5_f', name: 'Honey Chilli Potato (Full)', price: 170, cat: 'snacks', subcat: 'French Fries', desc: 'Sweet, spicy golden crunchy potato fingers.', variant: 'Full' },
+
+      { id: 'b1', name: 'Bun Makhan', price: 35, cat: 'snacks', subcat: 'Burger (Bun & Bite)', desc: 'Soft bun toasted nicely with a generous load of delicious butter.' },
+      { id: 'b2', name: 'Veg Burger', price: 50, cat: 'snacks', subcat: 'Burger (Bun & Bite)', desc: 'Classic soft patty served with creamy burger mayo and crisp onion.' },
+      { id: 'b3', name: 'Grilled Paneer Burger', price: 79, cat: 'snacks', subcat: 'Burger (Bun & Bite)', desc: 'Smoky grilled spiced cottage cheese steak with premium veggies.' },
+      { id: 'b4', name: 'Cheese Corn Burger', price: 89, cat: 'snacks', subcat: 'Burger (Bun & Bite)', desc: 'Gooey melted cheese with sweet yellow corn kernels baked in.' },
+      { id: 'b5', name: 'Double Decker Burger', price: 99, cat: 'snacks', subcat: 'Burger (Bun & Bite)', desc: 'Gigantic double patty burger loaded with extra cheese & veggies.' },
+
+      // CHINESE TADKA
+      { id: 'ct1_h', name: 'Veg Noodles (Half)', price: 50, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Traditional stir-fried noodles with crisp veggies and soy sauce.', variant: 'Half' },
+      { id: 'ct1_f', name: 'Veg Noodles (Full)', price: 90, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Traditional stir-fried noodles with crisp veggies and soy sauce.', variant: 'Full' },
+      { id: 'ct2_h', name: 'Paneer Veg Noodles (Half)', price: 70, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Fresh noodles topped with cubes of soft, savory paneer.', variant: 'Half' },
+      { id: 'ct2_f', name: 'Paneer Veg Noodles (Full)', price: 130, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Fresh noodles topped with cubes of soft, savory paneer.', variant: 'Full' },
+      { id: 'ct3_h', name: 'Hakka Noodles (Half)', price: 100, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Authentic mild, garlic-accented vegetable noodles.', variant: 'Half' },
+      { id: 'ct3_f', name: 'Hakka Noodles (Full)', price: 189, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Authentic mild, garlic-accented vegetable noodles.', variant: 'Full' },
+      { id: 'ct4_h', name: 'Chilli Garlic Noodles (Half)', price: 90, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Spicy noodle tossed with roasted red chillies & minced garlic.', variant: 'Half' },
+      { id: 'ct4_f', name: 'Chilli Garlic Noodles (Full)', price: 180, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Spicy noodle tossed with roasted red chillies & minced garlic.', variant: 'Full' },
+      { id: 'ct5_h', name: 'Schezwan Noodles (Half)', price: 100, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Zesty red hot Schezwan pepper infused noodles.', variant: 'Half' },
+      { id: 'ct5_f', name: 'Schezwan Noodles (Full)', price: 189, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Zesty red hot Schezwan pepper infused noodles.', variant: 'Full' },
+      { id: 'ct6_h', name: 'Singapuri Noodles (Half)', price: 90, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Mild yellow curry flavored noodles with crisp julienned vegetables.', variant: 'Half' },
+      { id: 'ct6_f', name: 'Singapuri Noodles (Full)', price: 179, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Mild yellow curry flavored noodles with crisp julienned vegetables.', variant: 'Full' },
+
+      { id: 'ct7_h', name: 'Veg Fried Rice (Half)', price: 60, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Fragrant aromatic basmati rice wok-tossed with spring onions & mixed veg.', variant: 'Half' },
+      { id: 'ct7_f', name: 'Veg Fried Rice (Full)', price: 120, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Fragrant aromatic basmati rice wok-tossed with spring onions & mixed veg.', variant: 'Full' },
+      { id: 'ct8_h', name: 'Paneer Fried Rice (Half)', price: 79, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Wok tossed basmati loaded with rich, soft cottage cheese cubes.', variant: 'Half' },
+      { id: 'ct8_f', name: 'Paneer Fried Rice (Full)', price: 159, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Wok tossed basmati loaded with rich, soft cottage cheese cubes.', variant: 'Full' },
+      { id: 'ct9_h', name: 'Chillie Garlic Fried Rice (Half)', price: 69, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Hot, garlicky wok stir-fried rice loaded with greens.', variant: 'Half' },
+      { id: 'ct9_f', name: 'Chillie Garlic Fried Rice (Full)', price: 130, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Hot, garlicky wok stir-fried rice loaded with greens.', variant: 'Full' },
+      { id: 'ct10_h', name: 'Schezwan Fried Rice (Half)', price: 80, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Spicy Red Schezwan peppercorn paste stir fry.', variant: 'Half' },
+      { id: 'ct10_f', name: 'Schezwan Fried Rice (Full)', price: 150, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Spicy Red Schezwan peppercorn paste stir fry.', variant: 'Full' },
+      { id: 'ct11_h', name: 'Singapuri Fried Rice (Half)', price: 90, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Exotic curry spices & wok-fried organic yellow basmati.', variant: 'Half' },
+      { id: 'ct11_f', name: 'Singapuri Fried Rice (Full)', price: 170, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Exotic curry spices & wok-fried organic yellow basmati.', variant: 'Full' },
+
+      { id: 'ct12_h', name: 'Veg Manchurian Dry (Half)', price: 70, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crispy cabbage & carrot meatballs glazed dry with garlic, soy, scallion sauce.', variant: 'Half' },
+      { id: 'ct12_f', name: 'Veg Manchurian Dry (Full)', price: 130, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crispy cabbage & carrot meatballs glazed dry with garlic, soy, scallion sauce.', variant: 'Full' },
+      { id: 'ct13_h', name: 'Veg Manchurian Gravy (Half)', price: 59, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Savory vegetable dumplings simmered in rich thick dark ginger soy gravy.', variant: 'Half' },
+      { id: 'ct13_f', name: 'Veg Manchurian Gravy (Full)', price: 110, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Savory vegetable dumplings simmered in rich thick dark ginger soy gravy.', variant: 'Full' },
+      
+      { id: 'ct14_h', name: 'Chilli Paneer Dry (Half)', price: 99, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crispy battered paneer cubes tossed hot with capsicum, onion & green chillies.', variant: 'Half' },
+      { id: 'ct14_f', name: 'Chilli Paneer Dry (Full)', price: 189, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crispy battered paneer cubes tossed hot with capsicum, onion & green chillies.', variant: 'Full' },
+      { id: 'ct15_h', name: 'Chilli Paneer Gravy (Half)', price: 89, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Succulent fried paneer cubes dunked in tangy spicy garlic-chilli gravy.', variant: 'Half' },
+      { id: 'ct15_f', name: 'Chilli Paneer Gravy (Full)', price: 179, cat: 'chinese', subcat: 'Chilli Paneer Gravy', desc: 'Succulent fried paneer cubes dunked in tangy spicy garlic-chilli gravy.', variant: 'Full' },
+
+      { id: 'ct16_h', name: 'Paneer Chopsy (Half)', price: 120, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crisp fried noodles topped with an incredibly thick sweet & sour red paneer sauce.', variant: 'Half' },
+      { id: 'ct16_f', name: 'Paneer Chopsy (Full)', price: 230, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crisp fried noodles topped with an incredibly thick sweet & sour red paneer sauce.', variant: 'Full' },
+      
+      { id: 'ct17_h', name: 'Paneer Manchurian Dry (Half)', price: 100, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crispy fried cottage cheese pieces glazed in dry oriental aromatic spices.', variant: 'Half' },
+      { id: 'ct17_f', name: 'Paneer Manchurian Dry (Full)', price: 189, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Crispy fried cottage cheese pieces glazed in dry oriental aromatic spices.', variant: 'Full' },
+      { id: 'ct18_h', name: 'Paneer Manchurian Gravy (Half)', price: 89, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Fried cottage cheese cubes simmered in spiced onion & ginger rich gravy.', variant: 'Half' },
+      { id: 'ct18_f', name: 'Paneer Manchurian Gravy (Full)', price: 169, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Fried cottage cheese cubes simmered in spiced onion & ginger rich gravy.', variant: 'Full' },
+
+      { id: 'ct19_h', name: 'Crispy Corn (Half)', price: 59, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Battered sweet corn kernels fried crispy and tossed in green chillies & scallion.', variant: 'Half' },
+      { id: 'ct19_f', name: 'Crispy Corn (Full)', price: 110, cat: 'chinese', subcat: 'Chinese Tadka', desc: 'Battered sweet corn kernels fried crispy and tossed in green chillies & scallion.', variant: 'Full' },
+
+      // CLASSIC CONTINENTAL
+      { id: 'cc1_h', name: 'Butter Garlic Mushroom (Half)', price: 149, cat: 'snacks', subcat: 'Classic Continental', desc: 'Sautéed fresh organic button mushrooms drenched in seasoned herb butter.', variant: 'Half' },
+      { id: 'cc1_f', name: 'Butter Garlic Mushroom (Full)', price: 289, cat: 'snacks', subcat: 'Classic Continental', desc: 'Sautéed fresh organic button mushrooms drenched in seasoned herb butter.', variant: 'Full' },
+      
+      { id: 'cc2_h', name: 'White Sauce Pasta (Half)', price: 70, cat: 'snacks', subcat: 'Classic Continental', desc: 'Penne tossed in insanely creamy, cheesy, rich and aromatic Béchamel sauce.', variant: 'Half' },
+      { id: 'cc2_f', name: 'White Sauce Pasta (Full)', price: 130, cat: 'snacks', subcat: 'Classic Continental', desc: 'Penne tossed in insanely creamy, cheesy, rich and aromatic Béchamel sauce.', variant: 'Full' },
+      
+      { id: 'cc3_h', name: 'Red Sauce Pasta (Half)', price: 50, cat: 'snacks', subcat: 'Classic Continental', desc: 'Penne tossed in sweet, hot and tangy slow cooked Italian herb tomato sauce.', variant: 'Half' },
+      { id: 'cc3_f', name: 'Red Sauce Pasta (Full)', price: 99, cat: 'snacks', subcat: 'Classic Continental', desc: 'Penne tossed in sweet, hot and tangy slow cooked Italian herb tomato sauce.', variant: 'Full' },
+
+      { id: 'cc4_h', name: 'Schezwan Pasta (Half)', price: 50, cat: 'snacks', subcat: 'Classic Continental', desc: 'Fusion penne pasta spiced up with sizzling fiery Sichuan pepper paste.', variant: 'Half' },
+      { id: 'cc4_f', name: 'Schezwan Pasta (Full)', price: 99, cat: 'snacks', subcat: 'Classic Continental', desc: 'Fusion penne pasta spiced up with sizzling fiery Sichuan pepper paste.', variant: 'Full' },
+
+      // VEG SANDWICH
+      { id: 'vs1', name: 'Veg Sandwich', price: 70, cat: 'snacks', subcat: 'Veg Sandwich', desc: 'Crisp cucumber, tomatoes, and greens with homemade mint chutney spread.', qtyInfo: '2pc' },
+      { id: 'vs2', name: 'Paneer Sandwich', price: 99, cat: 'snacks', subcat: 'Veg Sandwich', desc: 'Thick stuffed sandwich loaded with spiced grilled cottage cheese slices.', qtyInfo: '2pc' },
+      { id: 'vs3', name: 'Corn Sandwich', price: 89, cat: 'snacks', subcat: 'Veg Sandwich', desc: 'Delectable combination of sweet yellow corn and melted cheddar cheese spread.', qtyInfo: '2pc' },
+      { id: 'vs4', name: 'Bombay Sandwich', price: 149, cat: 'snacks', subcat: 'Veg Sandwich', desc: 'Traditional layered potato, beetroot, masala slice sandwich grilled crisp with butter.', qtyInfo: '2pc' },
+
+      // MAGGIE
+      { id: 'mg1', name: 'Plain Maggie', price: 40, cat: 'snacks', subcat: 'Maggie', desc: 'Classic comfort instant yellow noodles cooked perfectly with basic spices.' },
+      { id: 'mg2', name: 'Veg Maggie', price: 59, cat: 'snacks', subcat: 'Maggie', desc: 'Loaded with finely chopped colorful fresh carrots, peas, and green beans.' },
+      { id: 'mg3', name: 'Cheese Butter Maggie', price: 89, cat: 'snacks', subcat: 'Maggie', desc: 'Topped with a massive pat of Amul butter and grated rich mozzarella cheese.' },
+
+      // COMBO TREATS
+      { id: 'cb1', name: 'Veg Manchurian + Fried Rice', price: 90, cat: 'specials', subcat: 'Combo Treats', desc: 'Wok tossed fried rice coupled perfectly with warm, savory garlic vegetable manchurian balls.' },
+      { id: 'cb2', name: 'Chillie Paneer + Fried Rice', price: 129, cat: 'specials', subcat: 'Combo Treats', desc: 'Crispy fried cottage cheese in pepper soy glaze with fragrant basmati rice.' },
+      { id: 'cb3', name: 'Veg Manchurian + Noodles', price: 79, cat: 'specials', subcat: 'Combo Treats', desc: 'Stir fried vegetables noodles served hot with sizzling rich Manchurian gravy.' },
+      { id: 'cb4', name: 'Chilli Paneer + Veg Noodles', price: 120, cat: 'specials', subcat: 'Combo Treats', desc: 'Soft and crispy stir fried paneer wok tossed next to street-style soft noodles.' },
+      { id: 'cb5', name: 'French Fries + Burger + Coke', price: 129, cat: 'specials', subcat: 'Combo Treats', desc: 'Ultimate triple delight combo featuring salted french fries, classic veg burger, and cold drink.' },
+      { id: 'cb6', name: 'Tea + Bun Makhan', price: 49, cat: 'specials', subcat: 'Combo Treats', desc: 'All time vintage roadside favorite! Hot freshly brewed milk tea paired with soft buttered bun.' },
+
+      // THE GREEN CAFE SPECIALS
+      { id: 'gs1', name: 'Green Tea', price: 50, cat: 'specials', subcat: 'The Green Cafe Special', desc: 'Antioxidant rich pure organic light green leaf tea brewed freshly.' },
+      { id: 'gs2', name: 'Green Sauce Pasta', price: 99, cat: 'specials', subcat: 'The Green Cafe Special', desc: 'Penne cooked in signature garden green basil spinach walnut pesto sauce.' },
+      { id: 'gs3', name: 'Green Salad Bowl', price: 129, cat: 'specials', subcat: 'The Green Cafe Special', desc: 'Ultra healthy assortment of avocado, organic spinach, fresh cucumbers, and mint vinaigrette.' },
+      { id: 'gs4', name: 'Green Sandwich', price: 120, cat: 'specials', subcat: 'The Green Cafe Special', desc: 'A double-decker raw goodness sandwich stuffed with green bell pepper, spinach paste and avocados.' },
+      { id: 'gs5', name: 'Green Mocktail', price: 69, cat: 'specials', subcat: 'The Green Cafe Special', desc: 'Refreshing cool fizz juice blended with green apples, kiwi syrup, and mint leaves.' },
+      { id: 'gs6', name: 'Virgin Mojito', price: 59, cat: 'specials', subcat: 'The Green Cafe Special', desc: 'Muddled fresh green lemons, sweet mint leaves, sugar syrup topped with ice-cold sparkling club soda.' }
+    ];
+
+    // Reactive Global State
+    let cart = [];
+    let currentFilter = 'all';
+
+    // DOM References
+    const drinksContainer = document.getElementById('drinks-container');
+    const momosContainer = document.getElementById('momos-container');
+    const chineseContainer = document.getElementById('chinese-container');
+    const snacksContainer = document.getElementById('snacks-container');
+    const continentalContainer = document.getElementById('continental-container');
+    const specialsContainer = document.getElementById('specials-container');
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderMenu();
+      updateCartUI();
+      lucide.createIcons();
+    });
+
+    // Generate Beautiful Menu Card (with Cart Add Buttons & Quantity Controls)
+    function createItemCard(item) {
+      const isSpecial = item.cat === 'specials';
+      const cartItem = cart.find(c => c.id === item.id);
+      const quantityInCart = cartItem ? cartItem.quantity : 0;
+
+      return `
+        <div class="bg-white rounded-2xl p-5 border border-[#e1e8db] hover:border-[#739072] transition-all duration-300 shadow-sm flex flex-col justify-between group hover:shadow-md relative overflow-hidden">
+          
+          ${isSpecial ? '<div class="absolute top-0 right-0 bg-[#d4af37] text-white text-[9px] font-extrabold uppercase px-2.5 py-0.5 rounded-bl-xl tracking-wider animate-pulse">SPECIAL</div>' : ''}
+          
+          <div>
+            <div class="flex items-start justify-between gap-1">
+              <h4 class="font-bold text-[#1e2c22] text-sm group-hover:text-[#4f6f52] transition-colors">
+                ${item.name}
+              </h4>
+              <div class="flex items-center gap-1.5 shrink-0">
+                ${item.qtyInfo ? `<span class="text-[9px] text-gray-500 font-bold bg-gray-100 px-1.5 py-0.5 rounded">${item.qtyInfo}</span>` : ''}
+                ${item.variant ? `<span class="text-[9px] text-emerald-800 font-bold bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-100">${item.variant}</span>` : ''}
+              </div>
+            </div>
+            
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">
+              ${item.desc || 'Freshly assembled organic greens, rich regional spices & hygienic preps.'}
+            </p>
+          </div>
+
+          <div class="flex items-center justify-between mt-4 pt-3 border-t border-[#f4f6f1]">
+            <span class="font-extrabold text-[#3a4d39] text-base">
+              ₹${item.price}
+            </span>
+
+            <!-- Inline Quantity Add Controller -->
+            ${quantityInCart > 0 ? `
+              <div class="flex items-center gap-2 bg-[#f0f4ee] rounded-full px-2 py-1 border border-[#cbd7c7]/60">
+                <button onclick="decrementQuantity('${item.id}')" class="w-6 h-6 rounded-full bg-white hover:bg-[#739072] hover:text-white flex items-center justify-center text-xs font-bold transition-all shadow-sm">-</button>
+                <span class="text-xs font-extrabold text-[#1e2c22] px-1">${quantityInCart}</span>
+                <button onclick="incrementQuantity('${item.id}')" class="w-6 h-6 rounded-full bg-white hover:bg-[#739072] hover:text-white flex items-center justify-center text-xs font-bold transition-all shadow-sm">+</button>
+              </div>
+            ` : `
+              <button onclick="addToCart('${item.id}')" class="bg-[#f0f4ee] hover:bg-[#739072] text-[#3a4d39] hover:text-white px-4 py-1.5 rounded-full text-xs font-bold transition-all shadow-sm flex items-center gap-1">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i> Add
+              </button>
+            `}
+          </div>
+        </div>
+      `;
+    }
+
+    // Render Menu Elements
+    function renderMenu(searchTerm = '') {
+      drinksContainer.innerHTML = '';
+      momosContainer.innerHTML = '';
+      chineseContainer.innerHTML = '';
+      snacksContainer.innerHTML = '';
+      continentalContainer.innerHTML = '';
+      specialsContainer.innerHTML = '';
+
+      let counts = { drinks: 0, momos: 0, chinese: 0, snacks: 0, specials: 0 };
+
+      menuData.forEach(item => {
+        if (currentFilter !== 'all' && item.cat !== currentFilter) {
+          return;
+        }
+
+        if (searchTerm && !item.name.toLowerCase().includes(searchTerm.toLowerCase()) && !item.subcat.toLowerCase().includes(searchTerm.toLowerCase())) {
+          return;
+        }
+
+        const cardHtml = createItemCard(item);
+
+        if (item.subcat === 'Hot Sips' || item.subcat === 'Caffeine Corner') {
+          drinksContainer.innerHTML += cardHtml;
+          counts.drinks++;
+        } else if (item.subcat === 'Momo Magic') {
+          momosContainer.innerHTML += cardHtml;
+          counts.momos++;
+        } else if (item.subcat === 'Chinese Tadka') {
+          chineseContainer.innerHTML += cardHtml;
+          counts.chinese++;
+        } else if (item.subcat === 'French Fries' || item.subcat === 'Burger (Bun & Bite)' || item.subcat === 'Veg Sandwich') {
+          snacksContainer.innerHTML += cardHtml;
+          counts.snacks++;
+        } else if (item.subcat === 'Classic Continental' || item.subcat === 'Maggie') {
+          continentalContainer.innerHTML += cardHtml;
+          counts.snacks++;
+        } else if (item.subcat === 'Combo Treats' || item.subcat === 'The Green Cafe Special') {
+          specialsContainer.innerHTML += cardHtml;
+          counts.specials++;
+        }
+      });
+
+      // Show/Hide section groups based on results
+      document.querySelectorAll('.menu-group').forEach(group => {
+        const category = group.getAttribute('data-cat');
+        if (currentFilter !== 'all' && category !== currentFilter) {
+          group.style.display = 'none';
+        } else if (counts[category] === 0) {
+          group.style.display = 'none';
+        } else {
+          group.style.display = 'block';
+        }
+      });
+
+      lucide.createIcons();
+    }
+
+    // Tab Navigation Filter
+    function filterCategory(cat) {
+      currentFilter = cat;
+      
+      document.querySelectorAll('.category-tab').forEach(btn => {
+        btn.classList.remove('bg-[#3a4d39]', 'text-white');
+        btn.classList.add('text-[#4f6f52]');
+      });
+
+      const activeTab = document.getElementById(`tab-${cat}`);
+      if (activeTab) {
+        activeTab.classList.remove('text-[#4f6f52]');
+        activeTab.classList.add('bg-[#3a4d39]', 'text-white');
+      }
+
+      renderMenu(document.getElementById('searchInput').value);
+    }
+
+    // Search input Handler
+    function handleSearch() {
+      const searchInput = document.getElementById('searchInput').value;
+      renderMenu(searchInput);
+    }
+
+    // CART STATE LOGIC
+
+    function addToCart(itemId) {
+      const item = menuData.find(m => m.id === itemId);
+      if (!item) return;
+
+      const existing = cart.find(c => c.id === itemId);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ ...item, quantity: 1 });
+      }
+      
+      updateCartUI();
+      renderMenu(document.getElementById('searchInput').value);
+      triggerToast(`${item.name} added to plate! 🥗`);
+    }
+
+    function incrementQuantity(itemId) {
+      const existing = cart.find(c => c.id === itemId);
+      if (existing) {
+        existing.quantity += 1;
+        updateCartUI();
+        renderMenu(document.getElementById('searchInput').value);
+      }
+    }
+
+    function decrementQuantity(itemId) {
+      const existing = cart.find(c => c.id === itemId);
+      if (existing) {
+        if (existing.quantity > 1) {
+          existing.quantity -= 1;
+        } else {
+          cart = cart.filter(c => c.id !== itemId);
+        }
+        updateCartUI();
+        renderMenu(document.getElementById('searchInput').value);
+      }
+    }
+
+    function removeCompletely(itemId) {
+      cart = cart.filter(c => c.id !== itemId);
+      updateCartUI();
+      renderMenu(document.getElementById('searchInput').value);
+    }
+
+    function clearCart() {
+      cart = [];
+      updateCartUI();
+      renderMenu(document.getElementById('searchInput').value);
+      triggerToast("Plate cleared!");
+    }
+
+    // Update Plate Sidebar UI
+    function updateCartUI() {
+      const cartItemsContainer = document.getElementById('cartItems');
+      const cartEmptyState = document.getElementById('cartEmptyState');
+      const cartCountLabel = document.getElementById('cartCount');
+
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '';
+        cartItemsContainer.appendChild(cartEmptyState);
+        cartCountLabel.textContent = '0';
+      } else {
+        cartItemsContainer.innerHTML = '';
+        let totalItems = 0;
+
+        cart.forEach(item => {
+          totalItems += item.quantity;
+          const cartDiv = document.createElement('div');
+          cartDiv.className = "flex items-center justify-between gap-2 p-2.5 bg-[#fcfbf7] border border-[#cbd7c7]/40 rounded-xl text-xs";
+          cartDiv.innerHTML = `
+            <div class="flex-1">
+              <p class="font-bold text-[#1e2c22]">${item.name} ${item.variant ? `(${item.variant})` : ''}</p>
+              <p class="text-[10px] text-gray-500">₹${item.price} each</p>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+              <button onclick="decrementQuantity('${item.id}')" class="w-5 h-5 rounded-full bg-gray-200 hover:bg-[#739072] hover:text-white flex items-center justify-center text-xs font-bold">-</button>
+              <span class="text-xs font-extrabold text-[#1e2c22] w-4 text-center">${item.quantity}</span>
+              <button onclick="incrementQuantity('${item.id}')" class="w-5 h-5 rounded-full bg-gray-200 hover:bg-[#739072] hover:text-white flex items-center justify-center text-xs font-bold">+</button>
+              <button onclick="removeCompletely('${item.id}')" class="text-gray-400 hover:text-red-500 ml-1">
+                <i data-lucide="x" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          `;
+          cartItemsContainer.appendChild(cartDiv);
+        });
+
+        cartCountLabel.textContent = totalItems;
+      }
+
+      // Calculations
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      const tax = Math.round(subtotal * 0.05);
+      const total = subtotal + tax;
+
+      document.getElementById('cartSubtotal').textContent = `₹${subtotal.toFixed(2)}`;
+      document.getElementById('cartTax').textContent = `₹${tax.toFixed(2)}`;
+      document.getElementById('cartTotal').textContent = `₹${total.toFixed(2)}`;
+
+      lucide.createIcons();
+    }
+
+    // Scroll smoothly to cart element
+    function scrollToCart() {
+      const section = document.getElementById('cartSection');
+      section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      section.classList.add('ring-2', 'ring-[#739072]', 'ring-offset-2');
+      setTimeout(() => {
+        section.classList.remove('ring-2', 'ring-[#739072]', 'ring-offset-2');
+      }, 1500);
+    }
+
+    // Dining Mode Change Dropdown Selector Listener
+    function handleDiningModeChange() {
+      const mode = document.getElementById('diningMode').value;
+      const dineInFields = document.getElementById('dineInFields');
+      const tableSelect = document.getElementById('tableNumber');
+      const deliveryFields = document.getElementById('deliveryFields');
+      const deliveryAddress = document.getElementById('deliveryAddress');
+
+      if (mode === 'dinein') {
+        dineInFields.classList.remove('hidden');
+        tableSelect.setAttribute('required', 'true');
+        
+        deliveryFields.classList.add('hidden');
+        deliveryAddress.removeAttribute('required');
+      } else if (mode === 'delivery') {
+        deliveryFields.classList.remove('hidden');
+        deliveryAddress.setAttribute('required', 'true');
+        
+        dineInFields.classList.add('hidden');
+        tableSelect.removeAttribute('required');
+      }
+    }
+
+    // Process Form & Compile Order for WhatsApp API
+    function handleOrderSubmit(event) {
+      event.preventDefault();
+
+      if (cart.length === 0) {
+        triggerToast("⚠️ Your plate is empty! Please add items first.");
+        return;
+      }
+
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const mode = document.getElementById('diningMode').value;
+
+      let modeDetail = "";
+      if (mode === 'dinein') {
+        const table = document.getElementById('tableNumber').value;
+        if (!table) {
+          triggerToast("⚠️ Please select your Dine-In table number.");
+          return;
+        }
+        modeDetail = `🪑 Table Number: *${table}*`;
+      } else {
+        const address = document.getElementById('deliveryAddress').value.trim();
+        if (!address) {
+          triggerToast("⚠️ Please input your Delivery Address.");
+          return;
+        }
+        modeDetail = `🏠 Address: *${address}*`;
+      }
+
+      // Compile items formatted as list of text with quantity
+      let subtotal = 0;
+      let itemsListStr = "";
+      
+      cart.forEach((item) => {
+        const itemCost = item.price * item.quantity;
+        subtotal += itemCost;
+        const variantSuffix = item.variant ? ` (${item.variant})` : '';
+        itemsListStr += `• *${item.name}${variantSuffix}* x${item.quantity} = ₹${itemCost}\n`;
+      });
+
+      const tax = Math.round(subtotal * 0.05);
+      const total = subtotal + tax;
+
+      // Compile WhatsApp message structure cleanly and easily
+      let whatsappMsg = `*🌿 AWADH - THE GREEN CAFE 🌿*\n`;
+      whatsappMsg += `_Awadh Vihar Yojana, Lucknow_\n\n`;
+      
+      whatsappMsg += `*🛒 ORDER ITEMS:*\n`;
+      whatsappMsg += itemsListStr;
+      whatsappMsg += `\n`;
+      
+      whatsappMsg += `*💰 BILL DETAILS:*\n`;
+      whatsappMsg += `Subtotal: ₹${subtotal}\n`;
+      whatsappMsg += `Tax (5%): ₹${tax}\n`;
+      whatsappMsg += `*Total Amount: ₹${total}*\n\n`;
+      
+      whatsappMsg += `*👤 CUSTOMER INFO:*\n`;
+      whatsappMsg += `Name: *${name}*\n`;
+      whatsappMsg += `Phone: *${phone}*\n`;
+      whatsappMsg += `Mode: *${mode === 'dinein' ? 'Dine-In' : 'Home Delivery'}*\n`;
+      whatsappMsg += modeDetail;
+
+      // Format for WhatsApp link EXACTLY without the "+" sign or spaces in the domain path
+      const encodedMsg = encodeURIComponent(whatsappMsg);
+      const whatsappNumber = "917985435889"; 
+      const finalLink = `https://wa.me/${whatsappNumber}?text=${encodedMsg}`;
+
+      // Open new window/tab safely
+      window.open(finalLink, '_blank');
+      triggerToast("Opening WhatsApp to send order! 💬");
+    }
+
+    // Custom non-blocking toast creator
+    function triggerToast(message) {
+      const toast = document.createElement('div');
+      toast.className = "fixed bottom-5 left-1/2 -translate-x-1/2 bg-[#1e2c22] text-[#fcfbf7] px-6 py-3 rounded-full shadow-2xl z-50 text-xs font-semibold tracking-wider flex items-center gap-2 animate-bounce border border-emerald-700/50";
+      toast.innerHTML = `<span>🍃</span> ${message}`;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => toast.remove(), 500);
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
